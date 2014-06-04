@@ -5,9 +5,29 @@ body {
 	color: #444;
 }
 
+.title-box{
+    width: 600px;
+    margin: auto;
+    padding: 10px;
+}
+
 .question-box{
     width: 600px;
     height: 40px;
+    border: 1px solid;
+	margin: auto;
+    padding: 10px;
+}
+
+.question-detail-box{
+    width: 600px;
+    border: 1px solid;
+	margin: auto;
+    padding: 10px;
+}
+
+.answer-box{
+    width: 600px;
     border: 1px solid;
 	margin: auto;
     padding: 10px;

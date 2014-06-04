@@ -3,7 +3,17 @@
 {% block title %}List of questions{% endblock %}
 
 {% block content %}
-<h1>{{ object.title }}</h1>
-<p>{{ object.text }}</p>
-<p>User: {{ object.user }}</p>
+<div class="title-box">
+    <h1>{{ object.title }}</h1>
+</div>
+<div class="question-detail-box">
+    <p>{{ object.text }}</p>
+    <p>User: {{ object.user }}</p>
+</div>
+{% for answer in answers %}
+    <div class="answer-box">
+        <p>{{ answer.text }}</p>
+        <p>{{ answer.user }}</p>
+    </div>
+{% endfor %}
 {% endblock %}
